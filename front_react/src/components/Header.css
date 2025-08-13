@@ -1,0 +1,154 @@
+.header {
+  background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.nickname-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nickname-display:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.nickname-text {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nickname-edit-icon {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nickname-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.nickname-input {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  outline: none;
+  min-width: 120px;
+}
+
+.nickname-input::placeholder {
+  color: #95a5a6;
+}
+
+.nickname-save-btn,
+.nickname-cancel-btn {
+  border: none;
+  background: #87CEEB;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nickname-save-btn:hover {
+  background: #5F9EA0;
+  transform: scale(1.1);
+}
+
+.nickname-cancel-btn {
+  background: #e74c3c;
+}
+
+.nickname-cancel-btn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.alarm-button {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alarm-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.alarm-on {
+  background: rgba(46, 204, 113, 0.3);
+}
+
+.alarm-off {
+  background: rgba(231, 76, 60, 0.3);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+  }
+  
+  .nickname-text {
+    font-size: 14px;
+  }
+  
+  .nickname-input {
+    font-size: 14px;
+    min-width: 100px;
+  }
+  
+  .alarm-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
