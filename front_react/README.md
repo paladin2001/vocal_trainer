@@ -57,18 +57,30 @@ front_react/
 │   │   ├── BottomNavigation.js # 하단 네비게이션
 │   │   └── BottomNavigation.css
 │   ├── pages/
-│   │   ├── Home.js            # 홈 페이지
-│   │   ├── Home.css
-│   │   ├── Basic.js           # 기본연습 페이지
-│   │   ├── Basic.css
-│   │   ├── Advanced.js        # 심화연습 페이지
-│   │   ├── Advanced.css
-│   │   ├── Analysis.js        # 분석 페이지
-│   │   ├── Analysis.css
-│   │   ├── Environment.js     # 사용설정 페이지
-│   │   ├── Environment.css
-│   │   ├── Info.js            # 정보 페이지
-│   │   └── Info.css
+│   │   ├── Home/              # 홈 페이지
+│   │   │   ├── index.js       # 컴포넌트 export
+│   │   │   ├── Home.js        # 홈 페이지 컴포넌트
+│   │   │   └── Home.css       # 홈 페이지 스타일
+│   │   ├── Basic/             # 기본연습 페이지
+│   │   │   ├── index.js       # 컴포넌트 export
+│   │   │   ├── Basic.js       # 기본연습 컴포넌트
+│   │   │   └── Basic.css      # 기본연습 스타일
+│   │   ├── Advanced/          # 심화연습 페이지
+│   │   │   ├── index.js       # 컴포넌트 export
+│   │   │   ├── Advanced.js    # 심화연습 컴포넌트
+│   │   │   └── Advanced.css   # 심화연습 스타일
+│   │   ├── Analysis/          # 분석 페이지
+│   │   │   ├── index.js       # 컴포넌트 export
+│   │   │   ├── Analysis.js    # 분석 컴포넌트
+│   │   │   └── Analysis.css   # 분석 스타일
+│   │   ├── Environment/       # 사용설정 페이지
+│   │   │   ├── index.js       # 컴포넌트 export
+│   │   │   ├── Environment.js # 사용설정 컴포넌트
+│   │   │   └── Environment.css # 사용설정 스타일
+│   │   └── Info/              # 정보 페이지
+│   │       ├── index.js       # 컴포넌트 export
+│   │       ├── Info.js        # 정보 컴포넌트
+│   │       └── Info.css       # 정보 스타일
 │   ├── App.js                 # 메인 앱 컴포넌트
 │   ├── App.css                # 메인 스타일
 │   ├── index.js               # 앱 진입점
